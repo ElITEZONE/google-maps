@@ -60,7 +60,7 @@ type Bangalore struct {
 func main() {
 	router := gin.Default()
 	router.Use(cors.Default())
-	router.LoadHTMLGlob("static/index.html")
+	router.LoadHTMLGlob("index.html")
 	api := router.Group("/api")
 	{
 		api.POST("/post-general-data", postGeneralData)
